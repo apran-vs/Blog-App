@@ -1,0 +1,18 @@
+<!--include header-->
+<%- include('include/_header.ejs') %>
+<!--include header-->
+
+
+<br><br>
+
+    <form action="/api/blogs" method="post" id="new_blog">
+        <input type="text" id="Title" name="Title" placeholder="Title Here"><br>
+        <input type="url" id="imgURL" name="imgURL" placeholder="Image URL Here"><br>
+        <textarea name="Discription" rows="10" placeholder="Discription Here"></textarea><br>
+        <input type="submit" class="submit">
+    </form>
+
+
+<!--include footer-->
+<%- include('include/_footer.ejs') %>
+<!--include footer-->

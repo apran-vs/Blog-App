@@ -1,0 +1,15 @@
+<% for(var i=0;i<blogs.length;i++){ %>
+<div class="HomeBlog">
+    <div>
+        <img src="<%= blogs[i].imgURL %>" class="HomeImg">
+    </div>
+    <div>
+        <p class="title"><%= blogs[i].Title %></p>
+        <p class="datetime"><%= new Date(blogs[i].DateOfBlog) %></p>
+        <p><%= blogs[i].Discription %></p>
+        <div>
+            <button type="button" class="rdmrpos"><a href="/blog-page?id=<%= blogs[i]._id %>" class="rdmr"> Read More</a></button>
+        </div>
+    </div>
+</div>
+<% } %>
