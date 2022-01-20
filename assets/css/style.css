@@ -1,21 +1,26 @@
 /* css for main blog */
 body{
+    padding: 5px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #555354;
 }
 
 .navbar{
-    width: 100%;
-    height: 60px;
-    background-color: rgb(0, 0, 0);
+
     position: fixed;
-    /* background-position: fixed; */
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 9;
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    left: 0.93%;
+    right: 0.93%;
+    top: 0.93%;
+    /* bottom: 0%; */
+
+    background: rgba(255, 255, 255, 0.16);
+    mix-blend-mode: normal;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(25px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 30px;
+    min-width: 765px;
 }
 
 .links-container{
@@ -23,7 +28,7 @@ body{
     list-style: none;
     color:white;
     align-items: center;
-    margin-left: 150px;
+    /* margin-left: 150px; */
 }
 
 .link{
@@ -32,29 +37,51 @@ body{
     padding: 20px;
     text-transform: capitalize;
     color: #fff;
-    font-size:large ;
+    font-size: large;
+    mix-blend-mode: normal;
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
 }
 
 .align{
-    margin-left: 350px;
+    text-align: center;
     padding-bottom: 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.fontAlign{
+    background: -webkit-linear-gradient(#54CEF5 45.61%, #0592C1 78.65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .HomeBlog{
-    border: 1px rgb(146, 140, 140) solid;
-    margin: -0.7px 350px;
-    width: 788px;
+    margin: auto;
+    margin-bottom: 30px;
+    width: 700px;
     height: auto;
-    padding: 15px;
+    padding: 30px;
     overflow: auto;
+    /* position: absolute; */
+
+    background: #252525;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
 }
 
 .HomeImg{
+    /* position: absolute; */
+/* width: 350px;
+height: 350px;
+left: calc(50% - 350px/2 - 293px);
+top: calc(50% - 350px/2 - 0.5px); */
+
+    background: #C4C4C4;
+    border-radius: 20px;
     float: left;
-    margin-right: 15px;
-    width: 250px;
-    height: 150px;
+    margin-right: 30px;
+    width: 300px;
+    height: 200px;
+    border: 2px white solid;
 }
 
 
