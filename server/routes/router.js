@@ -46,7 +46,7 @@ route.get('/edit-blog', services.editBlog)
 route.post('/api/blogs', controller.create);
 route.get('/api/blogs', controller.find);
 route.put('/api/blogs/:id', controller.update);
-route.delete('/api/blogs/:id', catchAsync(controller.delete));
+route.delete('/api/blogs/:id', controller.delete);
 
 
 module.exports = route

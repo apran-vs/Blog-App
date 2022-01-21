@@ -3,9 +3,9 @@
 <!--include header-->
 
 
-<br><br>
+    <h1><div class="fontAlign align">Edit Blog</div></h1>
 
-    <form method="post" id="edit_blog">
+    <form method="post" class="newblog" id="edit_blog">
         <input type="hidden" name="id" value="<%= blogs._id %>">
         <input type="text" id="Title" name="Title" placeholder="Title Here" value="<%= blogs.Title %>"><br>
         <input type="url" id="imgURL" name="imgURL" placeholder="Image URL Here" value="<%= blogs.imgURL %>"><br>

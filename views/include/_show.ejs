@@ -5,10 +5,13 @@
     </div>
     <div>
         <p class="title"><%= blogs[i].Title %></p>
-        <p class="datetime"><%= new Date(blogs[i].DateOfBlog) %></p>
-        <p><%= blogs[i].Discription %></p>
+        <p class="datetime"><%= new Date(blogs[i].DateOfBlog).toDateString() %></p>
+        <p class="HomeDiscription"><%= blogs[i].Discription %></p>
         <div>
-            <button type="button" class="rdmrpos"><a href="/blog-page?id=<%= blogs[i]._id %>" class="rdmr"> Read More</a></button>
+            
+            <!-- <button type="button" class="rdmrpos">
+            </button> -->
+            <a href="/blog-page?id=<%= blogs[i]._id %>" class="ReadMore"> Read More</a>
         </div>
     </div>
 </div>

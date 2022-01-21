@@ -85,10 +85,10 @@ exports.update = (req, res) => {
 }
 
 // delete the blog by title
-exports.delete =async (req, res) => {
+exports.delete = (req, res) => {
     const id = req.params.id;
 
-    const result = await BlogDB.findByIdAndDelete(id)
+    BlogDB.findByIdAndDelete(id)
         .then(data=>{
             if(!data){
                 res.status(404).send({message:`Cannot Delete with id ${id}, Maybe id is wrong`});
@@ -99,5 +99,4 @@ exports.delete =async (req, res) => {
         .catch(err=>{
             res.status(500).send({message: "Could not delete User with id=" + id});
         });
-    // return result;
 }
