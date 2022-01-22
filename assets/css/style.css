@@ -206,6 +206,17 @@ input[type='submit']:hover{
 }
 
 /* css for blog page */
+.Discription{
+    text-align: justify;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
 
 .blogpicalign{
     width: 100%;
@@ -214,6 +225,8 @@ input[type='submit']:hover{
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
     background: #C4C4C4;
     border-radius: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+
 }
 
 .titleblog{

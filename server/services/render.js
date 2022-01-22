@@ -18,7 +18,6 @@ exports.blogPage = (req, res)=>{
     axios.get('http://localhost:3000/api/blogs', {params : {id:req.query.id}})
         .then(function(blogdata){
             res.render('blog-page',{blogs:blogdata.data});
-            console.log({blogs:blogdata.data})
         })
         .catch(err=>{
             res.send(err);
