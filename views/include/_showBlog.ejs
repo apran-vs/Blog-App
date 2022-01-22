@@ -5,14 +5,16 @@
     <div>
         <img src="<%= blogs.imgURL %>" class="blogpicalign">
     </div>
-    <div style="padding-left: 20px;" class="2nd">
-        <p class="datetime"><%= new Date(blogs.DateOfBlog) %></p>
-        <p><%= blogs.Discription %></p>
+    <div class="Second">
+        <p class="datetime"><%= new Date(blogs.DateOfBlog).toDateString() %></p>
+        <pre class="Discription"><%= blogs.Discription %></pre>
         <!-- <p>
             <script>document.write(new Date(2021, 11, 25).toDateString())</script>
         </p>
         <p>This is my first blog.</p> -->
-        <button type="button" class="edit"><a href="/edit-blog?id=<%= blogs._id %>" class="edit1">Edit</a></button>
-        <button type="button" class="delete"><a href="/index" class="delete1" data-id="<%= blogs._id %> ">Delete</a></button>
+        
+        <a href="/edit-blog?id=<%= blogs._id %>" class="edit">Edit</a>
+
+        <a href="/index" class="delete" data-id="<%= blogs._id %> ">Delete</a>
     </div>
 </div>

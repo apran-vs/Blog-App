@@ -1,9 +1,31 @@
 /* css for main blog */
 body{
     padding: 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     background-color: #555354;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 7px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: gray; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: lightgray; 
+  }
 
 .navbar{
 
@@ -34,22 +56,36 @@ body{
 .link{
     border: 0px black;
     display: inline;
-    padding: 20px;
+    padding: 5px 15px;
     text-transform: capitalize;
     color: #fff;
-    font-size: large;
+    font-size: 20px;
     mix-blend-mode: normal;
     text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
 }
 
+a.link1:hover{
+    font-size: 120%;
+    font-weight: bolder;
+    background: -webkit-linear-gradient(#54CEF5 45.61%, #0592C1 78.65%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    -webkit-transition: all 50ms ease;
+    transition: all 50ms ease;
+}
+
 .align{
     text-align: center;
-    padding-bottom: 15px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
 .fontAlign{
+    font-size: 130%;
     background: -webkit-linear-gradient(#54CEF5 45.61%, #0592C1 78.65%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -61,7 +97,6 @@ body{
     height: auto;
     padding: 30px;
     overflow: auto;
-    /* position: absolute; */
 
     background: #252525;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
@@ -69,12 +104,7 @@ body{
 }
 
 .HomeImg{
-    /* position: absolute; */
-/* width: 350px;
-height: 350px;
-left: calc(50% - 350px/2 - 293px);
-top: calc(50% - 350px/2 - 0.5px); */
-
+    
     background: #C4C4C4;
     border-radius: 20px;
     float: left;
@@ -82,32 +112,31 @@ top: calc(50% - 350px/2 - 0.5px); */
     width: 300px;
     height: 200px;
     border: 2px white solid;
-}
-
-
-
-.rdmrpos{
-    margin-top: 15px;
-    margin-bottom: 0px;
-    border: 2px solid rgb(29, 159, 211);
-    color: rgb(29, 159, 211);
-    border-radius: 5px;
-    padding: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
 }
 
 .title{
     font-size: 25px;
     font-weight: bold;
+    color: white;
     
 }
 
 .datetime{
-    color: rgb(110, 101, 101);
+    color: rgb(134, 134, 134);
 }
 
 p{
     padding-bottom: 3px;
     margin: 0px;
+    color: white;
+    text-align: justify;
+}
+.HomeDiscription{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
 a{
@@ -117,50 +146,109 @@ a.link1:link,a.link1:visited{
     color: #fff;
 }
 
-a.link1:hover{
+/* a.link1:hover{
     text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.623);
+} */
+
+a.ReadMore{
+    margin-top: 15px;
+    border: 2px solid rgb(29, 159, 211);
+    color: rgb(29, 159, 211);
+    border-radius: 10px;
+    padding: 7px;
+    background-color: #ffffff00;
+    display: inline-block;
+    /* color: rgb(29, 159, 211); */
 }
 
-a.rdmr{
-    color: rgb(29, 159, 211);
+a.ReadMore:hover{
+    color: #252525;
+    background-color: rgb(29, 159, 211);
 }
 
 
 /* css for new blog */
+
+.newblog{
+    width: 900px;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #252525;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
 input[type=text],[type=url]{
-    width: 1100px;
+    width: 800px;
     padding: 12px 20px;
-    margin: 8px 200px;
+    margin: 8px 50px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    color: white;
+    border-radius: 10px;
     box-sizing: border-box;
+    background: #616161e3;
 }
 
+input[type=text]:focus,[type=url]:focus{
+    color: white;
+}
 textarea{
-    width: 1100px;
+    width: 800px;
     padding: 12px 20px;
-    margin: 8px 200px;
+    margin: 8px 50px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    color: white;
+    border-radius: 10px;
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     font-size: medium;
+    background: #616161e3;
+    resize: none;
 }
 
-.submit{
-    margin-left: 200px;
+textarea:focus{
+    color: white;
+    resize: none;
+}
+
+input[type='submit']{
+    margin-left: 50px;
     border: 2px solid rgb(29, 159, 211);
     color: rgb(29, 159, 211);
-    border-radius: 5px;
-    padding: 5px 15px;
+    background-color: #ffffff00;
+    border-radius: 10px;
+    padding: 7px 20px;
     cursor: pointer;
 }
 
+input[type='submit']:hover{
+    color: #252525;
+    background-color: rgb(29, 159, 211);
+}
+
 /* css for blog page */
+.Discription{
+    text-align: justify;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
 
 .blogpicalign{
     width: 100%;
-    padding: 15px 0px;
+    margin: 15px 0px;
+    border: 2px white solid;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+    background: #C4C4C4;
+    border-radius: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+
 }
 
 .titleblog{
@@ -170,29 +258,40 @@ textarea{
     /* padding-bottom: 15px; */
 }
 
-.edit{
+.Second{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+a.edit{
     margin-top: 15px;
     margin-bottom: 0px;
     border: 2px solid rgb(216, 216, 0);
     color: rgb(216, 216, 2);
-    border-radius: 5px;
-    padding: 5px 15px;
-}
-
-a.edit1{
+    border-radius: 10px;
+    padding: 7px 20px;
     text-decoration: none;
-    color: rgb(216, 216, 2);
+    display: inline-block;
 }
 
-.delete{
+a.edit:hover{
+    color: #252525;
+    background-color: rgb(216, 216, 2);
+}
+
+a.delete{
     margin-top: 15px;
     margin-bottom: 0px;
-    border: 2px solid rgb(29, 159, 211);
-    color: rgb(29, 159, 211);
-    border-radius: 5px;
-    padding: 5px 15px;
-}
-a.delete1{
+    border: 2px solid rgb(211, 29, 29);
+    color: rgb(211, 29, 29);
+    border-radius: 10px;
+    padding: 7px 20px;
     text-decoration: none;
-    color: rgb(29, 159, 211);
+    display: inline-block;
+}
+
+a.delete:hover{
+    color: #252525;
+    background-color: rgb(211, 29, 29);
+
 }

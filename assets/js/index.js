@@ -22,12 +22,13 @@ $("#edit_blog").submit(function(event){
 
     $.ajax(request).done(function(response){
         alert("Blog Updated Successfully!")
+        location.reload(window.location.pathname('/blog-page'));
     })
 })
 
 
 if(window.location.pathname == "/blog-page"){
-    $ondelete = $(".HomeBlog .2nd .delete a.delete1");
+    $ondelete = $(".HomeBlog .Second .delete");
     // $ondelete = $(".table tbody td a.delete");
     $ondelete.click(function(){
         var id = $(this).attr("data-id")
@@ -41,7 +42,7 @@ if(window.location.pathname == "/blog-page"){
             $.ajax(request).done(function(response){
                 alert("Data Deleted Successfully!");
                 // window.location.pathname = "/";
-                location.reload();
+                location.reload(window.location.pathname('/index'));
             })
         }
     })
